@@ -1,0 +1,74 @@
+.subscription-container {
+    background-color: #233A66;
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 3800px;
+    margin: 0 auto;
+    margin-top: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-title {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 30px;
+    font-family: 'Abril Fatface', serif;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.subscription-input {
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    width: 80%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease;
+}
+
+.subscription-input:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+.subscription-button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #233A66;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscription-button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.subscription-message {
+    color: #fff;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.subscription-container[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.subscription-container[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}

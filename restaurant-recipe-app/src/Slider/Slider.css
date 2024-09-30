@@ -1,0 +1,73 @@
+/* Slider Container */
+.slider-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Center the slider */
+    position: relative;
+    overflow: hidden; /* Hide the overflow of slides */
+}
+
+/* Slides */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth slide transition */
+}
+
+.slide {
+    min-width: 100%; /* Each slide takes 100% of the container */
+    transition: transform 0.5s ease-in-out; /* Smooth animation */
+}
+
+.slide img {
+    width: 100%;
+    height: 600px; /* Fixed height for images */
+    object-fit: cover; /* Crop images to fit the container */
+}
+
+/* Overlay */
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    z-index: 1; /* Ensure overlay is above images */
+}
+
+/* Dots Container */
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative; /* Keep dots in the same flow */
+    z-index: 2; /* Ensure dots are above overlay */
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Active Dot */
+.dot.active {
+    background-color: #d4af37; /* Gold color for the active dot */
+}
+
+/* Hover Effect on Slide */
+.slide:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Hover Animation on Dots */
+.dot:hover {
+    background-color: #d4af37;
+    transform: scale(1.2); /* Slightly increase the size of dots on hover */
+}

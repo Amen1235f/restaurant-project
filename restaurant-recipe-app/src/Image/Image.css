@@ -1,0 +1,60 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set a fixed height for the container */
+    overflow: hidden; /* Hide overflow to maintain image aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align items vertically */
+    border-radius: 10px; /* Add rounded corners for a softer look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    margin-top: 50px;/* Add shadow for depth */
+}
+
+.image {
+    width: 100%;
+    height: 100%; /* Make image cover the entire container */
+    object-fit: cover; /* Crop the image to cover the container */
+    transition: transform 0.5s ease; /* Smooth transition for hover effect */
+}
+
+.image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with opacity */
+    z-index: 1; /* Ensure overlay is above the image */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center the text */
+    color: white; /* Text color for description */
+    z-index: 2; /* Ensure the text is above the overlay */
+    padding: 20px; /* Add padding for better text spacing */
+}
+
+.discover-text {
+    font-family: 'Great Vibes', cursive; /* Use an attractive font */
+    font-size: 3rem; /* Increase size for emphasis */
+    margin: 0; /* Remove default margin */
+    color: navy; /* Change text color to navy blue */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Add text shadow for depth */
+}
+
+.description-text {
+    font-size: 1.5rem; /* Slightly larger size for visibility */
+    margin: 10px 0 0; /* Adjust margin for spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add text shadow for depth */
+    max-width: 600px; /* Limit the width of the description text */
+    z-index: 2; /* Ensure description is above overlay */
+}

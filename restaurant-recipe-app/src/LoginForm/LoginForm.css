@@ -1,0 +1,54 @@
+/* LoginForm.css */
+
+.login-container {
+    max-width: 400px; /* Set a maximum width for the login form */
+    margin: 100px auto; /* Center the form in the middle of the page */
+    padding: 20px; /* Padding inside the container */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+  }
+  
+  .login-header {
+    text-align: center; /* Center the header text */
+    font-size: 2rem; /* Header font size */
+    color: #4D3F69; /* Primary color for the header */
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  .login-form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Space between inputs */
+  }
+  
+  .login-input {
+    padding: 12px; /* Padding for input fields */
+    border: 1px solid #4D3F69; /* Border color */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 1rem; /* Font size for input */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+  
+  .login-input:focus {
+    border-color: #C6ABAB; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  .login-button {
+    padding: 12px 20px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for buttons */
+    background-color: #4D3F69; /* Primary background color */
+    color: #ffffff; /* White text color */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .login-button:hover {
+    background-color: #C6ABAB; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
